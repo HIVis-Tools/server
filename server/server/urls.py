@@ -13,5 +13,5 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     
     # redirect everything else to hivis view
-    url(r'^.*$', RedirectView.as_view(url='hivis/', permanent=False), name='index')
+    url(r'^$', RedirectView.as_view(url='hivis/', permanent=False), name='index')
 )
